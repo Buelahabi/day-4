@@ -1,0 +1,138 @@
+1.How to compare two JSON have the same properties without order?
+var obj1 = { name: "Person 1", age:5 };
+var obj2 = { age:5, name: "Person 1" };
+console.log(JSON.stringify(obj1)==JSON.stringify(obj2))
+
+4.a)Declare four variables without assigning values and print them in console?
+codings:
+let a;
+let b;
+let c;
+let d;
+console.log(a,b,c,d);
+
+b)Declare variables to store your first name, last name, marital status, country and age in multiple lines
+
+let firstname="Effy"
+let lastname="John"
+let maritalstatus="Married"
+let country="India"
+let age="10"
+console.log(firstname);
+console.log(lastname);
+console.log(maritalstatus);
+console.log(country);
+console.log(age);
+
+c) Declare variables to store your first name, last name, marital status, country and age in a single line
+let firstname="Effy"
+let lastname="John"
+let maritalstatus="Married"
+let country="India"
+let age="10"
+console.log(firstname,lastname,maritalstatus,country,age);
+
+d)Simple Programs todo for Operators:
+Square of a number:
+let square=67
+console.log(square*square)
+
+e)Addition of 3 numbers:
+let a=45
+let b=40
+let c=25
+console.log(a+b+c);
+
+f)Pounds to kg:
+//1 pound=0.453
+let pound=25
+let kg=pound*0.453
+console.log(kg);
+
+g)Meter to miles:
+//1 Meter = 0.000621 Miles
+let meter=9
+let miles=25*0.000621
+console.log(miles)
+
+h)Display the asterisk pattern as shown below(No loop needed):
+*****
+*****
+*****
+*****
+*****
+let a="*****"
+console.log(a);
+let b="*****"
+console.log(b);
+let c="*****"
+console.log(c);
+let d="*****"
+console.log(d);
+let e="*****"
+console.log(e);
+
+i)Given two numbers and perform all arithmetic operations.
+//addition
+
+let a=5;
+let b=6;
+console.log(a+b);
+
+//subtraction
+
+let c=50;
+let d=40;
+console.log(c-d);
+
+//multiplication
+
+let e=65;
+let f=45;
+console.log(e*f);
+
+//division
+
+let g=874;
+let h=25;
+console.log(g%h);
+
+j)Find area of a triangle.
+
+//area =base*height/2
+let base=20;
+let height=30;
+area=base*height/2
+console.log(area);
+
+2)//display all the country flags in console
+var request= new XMLHttpRequest();
+request.open('GET','https://raw.githubusercontent.com/rvsp/restcountries-json-data/master/res-countries.json',true);
+request.send();
+request.onload = function(){
+    var data=JSON.parse(request.response);
+    for(let i=0;i<data.length;i++){
+        console.log(data[i].flag);
+    }
+}
+
+3)//print all countries name, region, sub region and population
+
+var request= new XMLHttpRequest();
+request.open('GET','https://raw.githubusercontent.com/rvsp/restcountries-json-data/master/res-countries.json',true);
+request.send();
+request.onload = function(){
+    var data=JSON.parse(request.response);
+    for(let i=0;i<data.length;i++){
+        console.log(data[i].name,data[i].region,data[i].subregion,data[i].population);
+    
+    }
+}
+
+
+
+
+
+
+
+
